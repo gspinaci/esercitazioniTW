@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio 7</title>
+  </head>
+  <body>
+    <h1>Esericizio 7 - Form</h1>
+    <p>
+      <b>DISCLAIMER:</b> siamo tutti d'accordo, le tabelle di layout non vanno usate ma ci accontentiamo apsettando CSS...
+    </p>
+
+    <table border="2">
+      <tr>
+        <th>
+          Città di partenza:
+        </th>
+        <td>
+          <input type="text" name="cittaPartenza" placeholder="Inserisci città di partenza">
+        </td>
+        <td rowspan="3">
+          <p>
+            <input type="radio" name="tipo" value="andataRitorno">
+            Andata e ritorno
+          </p>
+          <p>
+            <input type="radio" name="tipo" value="andata">
+            Andata
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <th>
+          Città di arrivo:
+        </th>
+        <td>
+          <input type="text" name="cittaArrivo" placeholder="Inserisci città di arrivo">
+        </td>
+      </tr>
+
+      <tr>
+        <th>
+          Numero passeggeri:
+        </th>
+        <td>
+          <input type="number" name="numeroPasseggeri" value="1">
+        </td>
+      </tr>
+
+      <tr>
+        <th colspan="2">
+          <b>Classe:</b>
+        </th>
+        <td>
+          <select name="classe">
+            <option value="turistica">Turistica</option>
+            <option value="primaClasse">Prima classe</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="3" >
+          <input type="button" name="submit" value="Invia">
+        </td>
+      </tr>
+
+    </table>
+  </body>
+</html>
