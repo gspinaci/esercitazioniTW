@@ -1,0 +1,36 @@
+body
+{
+    background: url("bg.png") center no-repeat;
+    color: white;
+
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-rule: 2px dashed white; /* Chrome, Safari, Opera */
+    -moz-column-rule: 2px dashed white; /* Firefox */
+    column-rule: 2px dashed white;
+}
+
+#sec1
+{
+    -webkit-column-break-after: always;
+    -moz-column-break-after: always;
+	break-before: column;
+}
+
+#sec1 p:nth-child(odd) {
+    background: #D3D3D3;
+}
+
+#sec1 p:nth-child(even) {
+    background: #808080;
+}
+
+#sec2 p:nth-child(odd) {
+    background: #808080;
+}
+
+#sec2 p:nth-child(even) {
+    background: #D3D3D3;
+}

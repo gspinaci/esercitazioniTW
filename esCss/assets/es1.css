@@ -1,0 +1,19 @@
+#sec1
+{
+    background-color: #D3D3D3;
+}
+
+#sec1 h1
+{
+    text-align: center;
+}
+
+#sec1 p a
+{
+    background-color: red;
+}
+
+#list1
+{
+    border: 2px dashed blue;
+}
