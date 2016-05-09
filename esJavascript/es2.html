@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prove Javascript</title>
+    <script  type="text/javascript">
+
+        function funzione()
+        {
+          var input = prompt('Specifica una stringa', '');
+
+          if (input !== null) {
+
+              document.getElementById("para1").innerHTML =
+              'Tu hai scritto che : '+input;
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Prove Javascript</h1>
+    <p id="para1">Un paragrafo di prova.</p>
+    <button type="button" onclick="funzione()">Clicca qui</button>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+[
+	{ 
+		"modello": "Fiat Qubo", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fiat_Fiorino_Qubo_front_20100704.jpg/520px-Fiat_Fiorino_Qubo_front_20100704.jpg", 
+		"prezzo": 10000
+	},
+	{ 
+		"modello": "Fiat Panda", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Fiat_Panda_front_20090318.jpg/520px-Fiat_Panda_front_20090318.jpg", 
+		"prezzo": 7000
+	},
+	{ 
+		"modello": "Fiat 500", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Fiat_500_1.4_16V_Rosso_Corsa_%E2%80%93_Frontansicht%2C_7._Mai_2011%2C_D%C3%BCsseldorf.jpg/520px-Fiat_500_1.4_16V_Rosso_Corsa_%E2%80%93_Frontansicht%2C_7._Mai_2011%2C_D%C3%BCsseldorf.jpg", 
+		"prezzo": 11000
+	},
+	{ 
+		"modello": "Hyundai i30", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hyundai_i30_Premium_CRDi_-_Flickr_-_mick_-_Lumix%281%29.jpg/520px-Hyundai_i30_Premium_CRDi_-_Flickr_-_mick_-_Lumix%281%29.jpg", 
+		"prezzo": 16000
+	},
+	{ 
+		"modello": "Hyundai Santa Fe", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/2004_Hyundai_Santa_Fe_GLS.jpg/520px-2004_Hyundai_Santa_Fe_GLS.jpg", 
+		"prezzo": 20000
+	},
+	{ 
+		"modello": "Alfa Romeo Giulietta", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Alfa_Romeo_Giulietta_front_20100704.jpg/520px-Alfa_Romeo_Giulietta_front_20100704.jpg", 
+		"prezzo": 20000
+	},
+	{ 
+		"modello": "Mercedes-Benz Classe GLK", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mercedes_GLK_350_CDI_4MATIC_front_20100508.jpg/520px-Mercedes_GLK_350_CDI_4MATIC_front_20100508.jpg", 
+		"prezzo": 35000
+	},
+	{ 
+		"modello": "Mercedes-Benz Classe A", 
+		"foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Mercedes-Benz_C169_A160_CDI_Facelift.JPG/440px-Mercedes-Benz_C169_A160_CDI_Facelift.JPG", 
+		"prezzo": 32000
+	}
+]

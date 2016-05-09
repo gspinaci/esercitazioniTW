@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prove Javascript</title>
+    <script  type="text/javascript">
+
+        function funzione()
+        {
+          var number1 = document.getElementById('number1').value;
+          var number2 = document.getElementById('number2').value;
+
+          var sum = parseInt(number1) + parseInt(number2);
+          document.getElementById('para1').innerHTML = 'Risultato = ' + sum;
+        }
+    </script>
+  </head>
+  <body>
+    <h1>Prove Javascript</h1>
+    <p id="para1">Un paragrafo di prova.</p>
+    <input type="number" id="number1" value="">
+    <input type="number" id="number2" value="">
+    <button type="button" onclick="funzione()">Clicca qui</button>
+  </body>
+</html>

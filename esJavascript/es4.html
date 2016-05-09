@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+
+    <table id="grid" class="table table-condensed table-hover table-striped">
+        <thead>
+            <tr>
+                <th data-column-id="id" data-type="numeric">modello</th>
+                <th data-column-id="sender">foto</th>
+                <th data-column-id="received" data-order="desc">prezzo</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+
+
+        </tbody>
+    </table>
+
+
+    <script
+			  src="https://code.jquery.com/jquery-2.2.3.min.js"
+			  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+
+        $("#grid").bootgrid({
+            ajaxSettings: {
+                method: "GET",
+                cache: false
+            }
+        });
+
+        /*
+        $("#grid-basic").bootgrid();
+
+        $.ajax('assets/auto.json', {
+
+          success: function(data) {
+
+            $('#table').empty();
+
+            data.forEach(elem => {
+
+              $('#table')
+              .append("<tr> <td>"+elem.modello+"</td> <td>"+elem.foto+"</td> <td>"+elem.prezzo+"</td> </tr>");
+
+            });
+          },
+          error: function(r) {
+             $('#result').text('errore');
+          }
+       });
+       */
+      });
+    </script>
+  </body>
+</html>
