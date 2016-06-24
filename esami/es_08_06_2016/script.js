@@ -47,18 +47,7 @@ $(document).ready(function(){
     // effettua prenotazione
     $('input[type=submit]').on('click',function(){
 
-        var altro = [];
-
-        $('input[name=altro]:checked').each(function() {
-            altro.push($(this).val());
-        });
-
-        var menu = {
-            primo: $('input[name=primo]:checked').val(),
-            secondo: $('input[name=secondo]:checked').val(),
-            contorno: $('input[name=contorno]:checked').val(),
-            extra: altro
-        };
+        var menu = getMenuBySelection();
 
         $.ajax({
             url: 'path/to/script',
@@ -131,3 +120,19 @@ $(document).ready(function(){
         return parseFloat(elem);
     }
 });
+
+function getMenuBySelection() {
+
+    var altro = [];
+
+    $('input[name=altro]:checked').each(function() {
+        altro.push($(this).val());
+    });
+
+    return {
+        primo: $('input[name=primo]:checked').val(),
+        secondo: $('input[name=secondo]:checked').val(),
+        contorno: $('input[name=contorno]:checked').val(),
+        extra: altro
+    };
+}
