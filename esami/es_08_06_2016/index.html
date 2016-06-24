@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>La mensa degli amici della mensa</title>
+        <link rel="stylesheet" href="master.css">
+    </head>
+    <body>
+
+        <div id="main">
+            <p class="search">
+                <label class="codice">Codice Bimbo:</label>
+                <input type="text"></input>
+            </p>
+
+            <h3 class="search">
+                <span class="name">Gianni Rossi</span>
+            </h3>
+
+            <nav id="nav">
+                <a href="/w-20160530-03"><<<</a>
+                <a href="/d-20160506">Lunedì 6</a>
+                <a href="/d-20160607">Martedì 7</a>
+                <a href="/d-20160608">Mercoledì 8</a>
+                <a href="/d-20160609">Giovedì 9</a>
+                <a href="/d-20160610">Venerdì 10</a>
+                <a href="/w-20160613-17">>>></a>
+            </nav>
+
+            <div id="content">
+                <h1>Mercoledì 8 Giugno</h1>
+
+                <div class="menu">
+                    <div>
+                        <div class="Portata">
+                            <span>Primo:</span>
+                        </div>
+
+                        <div class="PortataOption">
+                            <p>
+                                <input type="radio" name="primo" value="tagliatellaragu"/>
+                                <label>Tagliatelle al ragù -<span class="prezzo">3.12 €</span></label>
+                            </p>
+
+                            <p>
+                                <input type="radio" name="primo" value="tagliatellasalmone"/>
+                                <label>Tagliatelle al salmone (gluten free) -<span class="prezzo">3.47 €</span></label>
+                            </p>
+
+                             <p>
+                                 <input type="radio" name="primo" value="minestrone"/>
+                                 <label>Minestrone di verdura (gluten free) -<span class="prezzo">2.43 €</span></label>
+                             </p>
+
+                             <p>
+                                 <input type="radio" name="primo" value="niente" checked="yes"/>
+                                 <label>Niente</label>
+                             </p>
+                         </div>
+                    </div>
+
+                    <div>
+                        <div class="Portata">
+                             <span>Secondo:</span>
+                        </div>
+
+                        <div class="PortataOption">
+
+                            <p>
+                                 <input type="radio" name="secondo" value="scaloppinalimone"/>
+                                 <label>Scaloppina di pollo al limone -<span class="prezzo">3.25 €</span></label>
+                            </p>
+
+                            <p>
+                                 <input type="radio" name="secondo" value="arrostotacchino"/>
+                                 <label>Arrosto di tacchino -<span class="prezzo">3.72 €</span></label>
+                            </p>
+
+                            <p>
+                                 <input type="radio" name="secondo" value="frittatapomodori"/>
+                                 <label>Frittata di pomodori (gluten free) -<span class="prezzo">2.27 €</span></label>
+                            </p>
+
+                            <p>
+                                 <input type="radio" name="secondo" value="niente" checked="yes"/>
+                                 <label>Niente</label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="Portata">
+                            <span>Contorno:</span>
+                        </div>
+
+                        <div class="PortataOption">
+                            <p>
+                                <input type="radio" name="contorno" value="verdure"/>
+                                <label>Vedure al vapore (gluten free) -<span class="prezzo">1.33 €</span></label>
+                            </p>
+
+                            <p>
+                                <input type="radio" name="contorno" value="patatefritte"/>
+                                <label>Patatine fritte -<span class="prezzo">1.37 €</span></label>
+                            </p>
+
+                            <p>
+                                <input type="radio" name="contorno" value="insalatapatate"/>
+                                <label>Insalata patate e formaggio (gluten free) -<span class="prezzo">2.53 €</span></label>
+                            </p>
+
+                            <p>
+                                <input type="radio" name="contorno" value="niente" checked="yes"/>
+                                <label>Niente</label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="Portata">
+                            <span>Extra:</span>
+                        </div>
+
+                        <div class="PortataOption">
+                            <p>
+                                <input type="checkbox" name="altro" value="frutta"/>
+                                <label>Frutta -<span class="prezzo">1.00 €</span></label>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" name="altro" value="pane"/>
+                                <label>Pane -<span class="prezzo">0.30 €</span></label>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" name="altro" value="dolce"/>
+                                <label>Dolce -<span class="prezzo">2.00 €</span></label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>
+                            <span class="prezzoLabel">Totale:</span>
+                            <span class="prezzo">0 €
+                                <span class="prezzoCommento">(sconto 20% su pasti prenotati)</span>
+                            </span>
+                            </input>
+                        </p>
+                        <p>
+                            <input type="submit" value="Prenota" name="08/06/2016"></input>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="script1.js"></script>
+    </body>
+</html>

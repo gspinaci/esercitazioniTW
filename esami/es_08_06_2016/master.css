@@ -1,0 +1,54 @@
+#main{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.search{
+    text-align: center;
+}
+
+#nav{
+    text-align: center;
+}
+
+#nav a{
+    color: white;
+    background-color: orange;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+
+#nav a[href="/d-20160608"]{
+    background-color: grey;
+    border: 1px solid black
+}
+
+.menu > div{
+    margin: 20px 0;
+}
+
+.PortataOption, .Portata, .prezzoLabel{
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.PortataOption p{
+    margin: 0
+}
+
+.Portata, .prezzoLabel{
+    width: 100px;
+}
+
+.Portata span, .prezzoLabel{
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.prezzo{
+    font-style: italic;
+}
