@@ -1,0 +1,129 @@
+<!-- non c'è la doctype, ed è un xhtml-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Gita in Europa</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!-- manca href -->
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <!-- manca la chiusura del tag link-->
+    </head>
+    <body>
+        <h1>Capitali europee</h1>
+        <!-- elemento nav non esiste in xhtml -->
+        <nav>
+            <a href="/Berlino">« Berlino</a>
+            <a href="/Praga">Praga</a>
+            <a href="/Madrid">Madrid »</a>
+        </nav>
+
+        <div>
+            <div>
+                <p>
+                    Il club <i>Amici della numismatica</i> ti offre numerosi vantaggi e prezzi imperdibili. Scegli un albergo convenzionato e prenota la tua prossima vacanza in Europa:
+                </p>
+
+                <!-- value e name sono invertiti -->
+                <ul>
+                    <li>
+                        <input type="radio" value="Astoria" name="albergo" />
+                        <label>Astoria</label>
+                    </li>
+                    <li>
+                        <input type="radio" value="Golem" name="albergo" checked />
+                        <label>Golem</label>
+                    </li>
+                    <li>
+                        <input type="radio" value="Monastery" name="albergo" />
+                        <label>Monastery</label></li>
+                    </li>
+                    <li>
+                        <input type="radio" value="U Zlate Podkovy" name="albergo" />
+                        <label>U Zlate Podkovy</label>
+                    </li>
+                </ul>
+            </div>
+
+            <p>
+                <span>
+                    Wi-Fi gratuito, aria condizionata
+                    e TV satellitare fanno parte
+                    della dotazione standard delle camere,
+
+                    arredate con funzionali mobili
+                    in legno, pareti bianche e grandi
+                    finestre insonorizzate per un
+                    massimo comfort.
+                </span>
+                <br />
+                <!-- manca alt -->
+                <img src="golem1.jpg" />
+
+                <span>
+                    Sito a meno di 10 minuti a piedi da
+                    piazza Venceslao, dal Museo
+                    Nazionale e dal Ponte Carlo, il Golem
+                    Hotel offre un centro benessere
+                    e una ricca colazione a buffet.
+                </span>
+                <br />
+                <span>
+                    Tra le strutture termali dell'hotel
+                    figurano una sauna, una bagno
+                    turno e una minipalestra. La stazione
+                    ferroviaria centrale e la
+                    fermata autobus per l'aeroporto distano
+                    solo 3 minuti a piedi
+                    dall'hotel Maria Prag.
+                </span>
+                <br />
+                <span>
+                    La prima colazione a buffet comprende
+                    diversi piatti caldi e
+                    freddi, frutta fresca e verdura, a
+                    cui si accompagnano una vasta scelta
+                    di cereali e insalate e un menù à
+                    la carte per i dormiglioni.
+                    Piatti tradizionali della cucina ceca
+                    vi attendono al ristorante.
+                </span>
+            </p>
+
+            <table>
+                <tr>
+                    <th>Mese</th>
+                    <th>Prezzo a notte</th>
+                    <th>Risparmio!</th>
+                </tr>
+
+                <tr>
+                    <td>Gennaio-Febbraio</td>
+                    <td>$60</td>
+                    <td rowspan="2">$60</td>
+                </tr>
+
+                <tr>
+                    <td>Marzo-Maggio</td>
+                    <td>$70</td>
+                </tr>
+
+                <tr>
+                    <td>Giugno-Agosto</td>
+                    <td>$90</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>Settembre-Ottobre</td>
+                    <td>$70</td>
+                    <td rowspan="2">$70</td>
+                </tr>
+                <tr>
+                    <td>Novembre-Dicembre</td>
+                    <td>$80</td>
+                </tr>
+            </table>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="script.js" type="text/javascript">
+        </script>
+    </body>
+</html>
