@@ -1,9 +1,51 @@
 $(document).ready(function(){
 
-    // prenotazione
-    $('input[type=submit]').on('click',function(){
+    //seleziona il menu in base al giorno
+    $('a').on('click',function(e) {
 
-        var codice_studente = $('.search input').val();
+        e.preventDefault();
+
+        var codiceGiorno = $(this).attr('href');
+
+        /*
+            risposta :
+
+            {
+                primo: [
+                    {
+                        value: 'tagliatellaragu',
+                        desc: 'Tagliatelle al ragù -',
+                        prezzo: '3.12 €'
+                    },
+                    {
+                        ...
+                    }
+                ],
+                secondo: [
+                    {
+                        ...
+                    }
+                ],
+                ...
+            }
+        */
+        $.ajax({
+
+            url: 'path/to/script?codice='+codiceGiorno,
+            type: 'get',
+            success: function (res) {
+
+                updateMenu(res);
+            },
+            error: function (err) {
+
+                handleError(err.status,err.statusText);
+            }
+        });
+    });
+
+    // effettua prenotazione
+    $('input[type=submit]').on('click',function(){
 
         var altro = [];
 
@@ -18,14 +60,10 @@ $(document).ready(function(){
             extra: altro
         };
 
-        //prenota pasto+indentificazione
         $.ajax({
             url: 'path/to/script',
             type:'post',
-            data:{
-                utente: codice_studente,
-                pasto: menu
-            },
+            data: menu,
             success: function(res) {
                 //la logica di questo metodo dipende da come è impostato il server
                 alert('Prenotato il pasto selezionato!');
@@ -41,40 +79,49 @@ $(document).ready(function(){
         });
     });
 
-    // visualizzazione menu'
-    $('a').on('click',function(e) {
+    $('.codice+input').on('change',function(){
 
-        e.preventDefault();
+        //se è un numero di matricola, è una mia scelta
+        if($(this).text().length()>=6) {
 
-        alert($(this).attr('href'));
+            var codiceStudente = $(this).val();
 
-        //qui devo aggiungere il popolamento dell'intera pagina
+            $.ajax({
+                url: 'path/to/script?codiceStudente='+codiceStudente,
+                type: 'get',
+                success: function(res) {
+
+                    welcome(res.utente);
+                },
+                error: function(err) {
+
+                    handleError(err.status,err.statusText);
+                }
+            });
+        }
     });
 
     //modifica del prezzo
     $('input[name=primo]').on('change',function(){ setPrezzo(); });
     $('input[name=secondo]').on('change',function(){ setPrezzo(); });
     $('input[name=contorno]').on('change',function(){ setPrezzo(); });
-
     $('input[name=altro]').on('change',function(){ setPrezzo(); });
 
     function setPrezzo() {
 
+        var prezzoCommento = ' € <span class="prezzoCommento">(sconto 20% su pasti prenotati)</span>';
+
         var prezzo = 0;
 
-        $('input[type=radio]:checked').each(function(){
+        $('input:checked').each(function(){
 
-            if($(this).val() != 'niente'){ prezzo += getPrezzoName($(this).next().children('.prezzo').text()); }
+            if($(this).val() != 'niente'){
+
+                prezzo += getPrezzoName($(this).next().children('.prezzo').text());
+            }
         });
 
-        $('input[name=altro]:checked').each(function(){
-
-            prezzo += getPrezzoName($(this).next().children('.prezzo').text());
-        });
-
-
-
-        $('.prezzoLabel+.prezzo').html(prezzo + ' € <span class="prezzoCommento">(sconto 20% su pasti prenotati)</span>');
+        $('.prezzoLabel+.prezzo').html(prezzo + prezzoCommento);
     }
 
     function getPrezzoName(elem){
