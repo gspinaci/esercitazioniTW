@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Campi calcetto</h1>
+        <div class="content">
+            <div class="info">
+                <h3>Scegli data e orario e verifica la disponibilità del campo</h3>
+                <p>
+                    <label>Mese:</label>
+                    <select name="mese">
+                        <option value="giugno">giugno</option>
+                        <option value="luglio">luglio</option>
+                        <option value="agosto">agosto</option>
+                    </select>
+                    <label>Giorno:</label>
+                    <select name="giorno">
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                    </select>
+                    <label>Orario:</label>
+                    <select name="giorno">
+                        <option value="20">20-21</option>
+                        <option value="21">21-22</option>
+                        <option value="22">22-23</option>
+                    </select>
+                </p>
+
+                <table id="timetable">
+                    <thead>
+                        <tr>
+                            <th>nome</th>
+                            <th>giocatori</th>
+                            <th>descrizione</th>
+                            <th>prezzo</th>
+                            <th>libero</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>campo 1</td>
+                            <td>8 giocatori</td>
+                            <td>all'aperto, illuminazione</td>
+                            <td>40 euro</td>
+                            <td><img src="img/yes.png" alt="campo libero" /></td>
+                        </tr>
+
+                        <tr>
+                            <td>campo 2</td>
+                            <td>10 giocatori</td>
+                            <td>coperto, aria condizionata, illuminazione, spogliatoi</td>
+                            <td>60 euro</td>
+                            <td><img src="img/no.png" alt="campo occupato" /></td>
+                        </tr>
+
+                        <tr>
+                            <td>campo 3</td>
+                            <td>10 giocatori</td>
+                            <td>coperto, aria condizionata, illuminazione, spogliatoi</td>
+                            <td>60 euro</td>
+                            <td><img src="img/yes.png" alt="campo libero" /></td>
+                        </tr>
+                        <tr>
+                            <td>campo 4</td>
+                            <td>14 giocatori</td>
+                            <td>all'aperto, illuminazione</td>
+                            <td>70 euro</td>
+                            <td><img src="img/yes.png" alt="campo libero" /></td>
+                        </tr>
+                    </tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="reservation">
+                <section>
+                    <h3>Effettua una prenotazione</h3>
+                    <div>
+                        <label for="campo">Scegli il campo: </label>
+
+                        <ul>
+                            <li>
+                                <input type="radio" name="campo" value="1"> Campo 1
+                            </li>
+                            <li>
+                                <input type="radio" name="campo" value="3"> Campo 3
+                            </li>
+                            <li>
+                                <input type="radio" name="campo" value="4"> Campo 4
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <label for="nome">Nome e cognome: </label>
+                        <input type="text" name="nome" value="">
+                    </div>
+
+                    <div>
+                        <label for="telefono">Numero di telefono: </label>
+                        <input type="text" name="telefono" value="">
+                    </div>
+
+                    <div>
+                        <textarea name="commenti" rows="8" cols="40">Commenti o richiesta di informazioni</textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="prenota">
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </body>
+</html>

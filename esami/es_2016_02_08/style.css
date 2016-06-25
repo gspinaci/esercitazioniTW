@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.content{
+    display: inline-block;
+}
+
+.info,{
+    display: block;
+}
+
+
+/*
+    Anche se questa regola è sopra quella successiva, è meno specifica
+    quindi la prima label sotto .info avrà un padding-left minore
+ */
+.info label{
+    padding-left: 50px;
+}
+
+.info label:first-child{
+    padding-left: 20px;
+}
+
+table, tr, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+thead tr{
+    text-transform: uppercase;
+    color: white;
+    background-color: #468284;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #90C4DE;
+}
+
+tbody tr:nth-child(even){
+    background-color: #E6E6FA;
+}
+
+/*Seconda parte*/
+.reservation{
+    display: inline-block;
+    text-align: left;
+}
+
+.reservation input[type=text]{
+    float: right;
+}
+
+ul{
+    list-style: none;
+}
+
+section > div{
+    clear: right;
+}
