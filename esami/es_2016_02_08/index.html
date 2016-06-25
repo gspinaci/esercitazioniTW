@@ -24,7 +24,7 @@
                         <option value="26">26</option>
                     </select>
                     <label>Orario:</label>
-                    <select name="giorno">
+                    <select name="ora">
                         <option value="20">20-21</option>
                         <option value="21">21-22</option>
                         <option value="22">22-23</option>
@@ -87,6 +87,9 @@
                                 <input type="radio" name="campo" value="1"> Campo 1
                             </li>
                             <li>
+                                <input type="radio" name="campo" value="2"> Campo 2
+                            </li>
+                            <li>
                                 <input type="radio" name="campo" value="3"> Campo 3
                             </li>
                             <li>
@@ -116,5 +119,18 @@
 
             </div>
         </div>
+
+        <template id="campo">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><img /></td>
+            </tr>
+        </template>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -39,6 +39,11 @@ thead tr{
     background-color: #468284;
 }
 
+tbody tr:hover{
+
+    cursor: pointer;
+}
+
 tbody tr:nth-child(odd){
     background-color: #90C4DE;
 }
