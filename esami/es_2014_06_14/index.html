@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Titolo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Noleggo camper on-the-fly</h1>
+
+        <div id="wrapper">
+            <div>
+                <h3>Parco camper</h3>
+                <table>
+                    <tr>
+                    <th>Modello
+                    <th>Posti
+                    <th>Descrizione
+                    <th>Prezzo (giornaliero)
+                    <th>Disponibilità
+
+                    <tr class="yes">
+                        <td>
+                            Livingstone 2
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            Furgonato, non molto spazioso ma confortevole
+                        </td>
+                        <td>
+                            70 €
+                        </td>
+                        <td>
+                            <img src="img/yes.png" alt="Sì" />
+                        </td>
+                    </tr>
+                    <tr class="yes">
+                        <td>
+                            Matrix Axess
+                        </td>
+                        <td>
+                            5
+                        </td>
+                        <td>
+                            Semi-integrale, ottimamente arredato
+                        </td>
+                        <td>
+                            80 €
+                        </td>
+                        <td>
+                            <img src="img/yes.png" alt="Sì" />
+                        </td>
+                    </tr>
+                    <tr class="no">
+                        <td>
+                            Sun living
+                        </td>
+                        <td>
+                            6
+                        </td>
+                        <td>
+                            Mansardato, fantastico
+                        </td>
+                        <td>
+                            130 €
+                        </td>
+                        <td>
+                            <img src="img/yes.png" alt="Sì" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <h3>Noleggia</h3>
+                <form class="" action="index.html" method="post">
+                    <div class="body">
+                        <span>
+                            <p>
+                                <label for="camper">Camper :</label>
+                            </p>
+                            <p>
+                                <label for="giorni">Giorni :</label>
+                            </p>
+                            <p>
+                                <label for="cliente">Cliente :</label>
+                            </p>
+                        </span>
+                        <span>
+                            <p>
+                                <select name="camper">
+                                    <option value="livingston">Livingstone 2</option>
+                                    <option value="matrix">Matrix Axess</option>
+                                    <option value="sun">Sun Living</option>
+                                </select>
+                            </p>
+                            <p>
+                                <select name="giorni">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="text" name="cliente">
+                            </p>
+                        </span>
+                    </div>
+                    <div>
+                        <textarea name="note"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Invia">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

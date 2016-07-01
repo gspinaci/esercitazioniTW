@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+}
+
+#wrapper{
+    display: inline-block;
+}
+
+#wrapper > div{
+    display: block;
+    vertical-align: top;
+    text-align: left;
+}
+
+#wrapper > div{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+#wrapper > div:first-child {
+    text-align: center;
+}
+
+#wrapper > div:last-child{
+    display: inline-block;
+    padding: 20px 50px;
+}
+
+table,tr,td,th{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td,th{
+    padding: 10px;
+}
+
+th{
+    color: white;
+    background-color: black;
+}
+
+.yes{
+    background-color: green;
+}
+
+.no{
+    background-color: red;
+}
+
+.body span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.body span:first-child label{
+    font-style: italic;
+}
+
+textarea{
+    width: 400px;
+    height: 150px;
+}

@@ -1,0 +1,36 @@
+{
+    "@context":{
+        "ex": "http://www.example.com/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "persona": "foaf:person",
+        "nome": "foaf:givenName",
+        "cognome": "foaf:familyName",
+        "email": {
+            "@id": "foaf:mbox",
+            "@type": "@id"
+        },
+        "amico_di": {
+            "@id": "foaf:knows",
+            "@type": "@id"
+        },
+        "data_di_nascita": {
+            "@id": "http://schema.org/birthDate",
+            "@type": "http://www.w3.org/2001/XMLSchema#date"
+        }
+    },
+    "@id": "ex:me",
+    "@type": "persona",
+    "nome": "John",
+    "cognome": "Doe",
+    "email": "mailto:john.doe@example.com",
+    "amico_di":{
+        "@id": "ex:you",
+        "@type": "persona",
+        "nome": "Jane",
+        "cognome": "Doe",
+        "email": "jane.doe@example.com",
+        "amico_di": "ex:me",
+        "data_di_nascita": "1982-03-29"
+    },
+    "data_di_nascita":"1981-01-15"
+}

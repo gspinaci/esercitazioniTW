@@ -1,0 +1,9 @@
+{
+"heading": "Descrizione viaggio a Torino", "desc": [
+"Il pacchetto comprende... ", "Viaggia con noi... ",
+"Dal Palazzo Reale al Santuario..." ],
+"prices": [
+{"label": "da 1 a 3", "price": 500 },
+{"label": "da 4 a 6", "price": 400, "emphasis": true}, {"label": "più di 6", "price": 350 }
+]
+}

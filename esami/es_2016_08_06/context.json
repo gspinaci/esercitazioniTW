@@ -1,0 +1,73 @@
+{
+    "@context":{
+        "corpus": "https://w3id.org/oc/corpus/",
+        "purl": "http://purl.org/",
+        "spar": "purl:spar/",
+        "xds": "http://www.w3.org/2001/XMLSchema#",
+        "core": "purl:vocab/frbr/core#",
+        "fabio": "spar:fabio/",
+        "datacite": "spar:datacite",
+
+        "gbr": "corpus:br",
+        "gbe": "corpus:be",
+        "gre": "corpus:re",
+        "gid": "corpus:id",
+
+        "inbook": "fabio:bookChapter",
+        "document": "fabio:Expression",
+
+        "reference": "core:part",
+        "doi": "datacite:doi",
+
+        "identifier": "datacite:hasIdentifier",
+        "unique_identifier": "datacite:Identifier",
+        "crossref": {
+            "@id": "spar:biro/references",
+            "@type": "@id"
+        },
+        "part_of": {
+            "@id": "core:partOf",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "core:embodiment",
+            "@type": "@id"
+        },
+        "year": {
+            "@id": "fabio:hasPublicationYear",
+            "@type": "xds:gYear"
+        },
+        "title": {
+            "@id": "purl:dc/terms/title",
+            "@type": "xds:string"
+        },
+        "content": {
+
+            "@id": "spar:c4o/hasContent",
+            "@type": "xds:string"
+        },
+        "id": {
+            "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
+            "@type": "xds:string"
+        },
+        "type": {
+            "@id": "datacite:usesIdentifierScheme",
+            "@type": "@id"
+        }
+    },
+    "@type": [ "inbook", "document" ], "part_of": "gbr:2",
+    "reference": {
+        "@type": "entry",
+        "content": "Alkhateeb, F.: Querying RDF(S) with regular expressions. Ph.D. thesis (2008).", "@id": "gbe:1",
+        "crossref": "gbr:3"
+    },
+    "format": "gre:1",
+    "@id": "gbr:1",
+    "year": "2015",
+    "title": "SPARQL with Property Paths",
+    "identifier": {
+        "@type": "unique_identifier", "@id": "gid:1",
+        "type": "doi",
+        "id": "10.1007/978-3-319-25007-6_1"
+    }
+}

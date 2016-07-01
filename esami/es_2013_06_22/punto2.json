@@ -1,0 +1,15 @@
+{
+    "heading": "Le fantastiche città da visitare:",
+    "items": [
+        {
+            "id": "AO",
+            "label": "Aosta",
+            "desc": "Il fascino della città di confine"
+        },
+        {
+            "id": "TO",
+            "label": "Torino",
+            "desc": "La prima capitale dItalia"
+        }
+    ]
+}

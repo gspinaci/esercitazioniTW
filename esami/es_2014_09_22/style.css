@@ -1,0 +1,68 @@
+body{
+    text-align: center;
+}
+
+select{
+    margin: none;
+}
+
+.wrapper{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+header,.menu{
+    padding: 0 20px;
+}
+
+form{
+     display: inline-block;
+     text-align: left;
+     width: 100%;
+}
+
+form > div{
+    border: 1px solid grey;
+    margin: 5px;
+}
+
+form span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+form span:first-child{
+    width: 40%;
+}
+
+body span:first-child div{
+    text-align: right;
+    margin: 11.5px 0 11.5px 0;
+}
+
+body span:last-child div{
+     text-align: left;
+     margin: 10px 0;
+}
+form > p{
+    text-align: center;
+}
+
+.menu section{
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.menu img{
+    margin: 0 10px;
+}
+
+.menu > .lista > section:nth-child(odd) img{
+    float: left;
+}
+
+.menu > .lista > section:nth-child(even) img{
+    float: right;
+}

@@ -1,0 +1,20 @@
+{
+    "@id": "http://www.example.com/me",
+    "@type": "http://xmlns.com/foaf/0.1/Person",
+
+    "http://xmlns.com/foaf/0.1/givenName": "John",
+    "http://xmlns.com/foaf/0.1/familyName": "Doe",
+    "http://xmlns.com/foaf/0.1/mbox": {
+
+        "@id": "mailto:john.doe@example.com"
+    },
+    "http://xmlns.com/foaf/0.1/knows": {
+
+        "@id": "http://www.example.com/you",
+    },
+    "http://schema.org/birthDate": {
+
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1981-01-15"
+    }
+}

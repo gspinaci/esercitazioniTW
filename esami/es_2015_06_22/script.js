@@ -70,7 +70,8 @@ var json = {
             img:'https://...',
             alt:'questa img è superfiga'
         },
-        'paragrafo'
+        'paragrafo',
+        '...'
     ],
     tariffe: [
         {
@@ -103,7 +104,7 @@ function handleError(status,statusText) {
 
     //sarebbe buono far vedere in ogni caso la descrizione
     //infatti se potessi gestire anche il server, invierei nella risposta
-    //anche la descrizione com visto nel json del punto 2 
+    //anche la descrizione com visto nel json del punto 2
     else if(status === 406){
 
         $('table').find('tr:gt(0)').remove();

@@ -1,0 +1,50 @@
+nav{
+    text-align: center;
+}
+
+nav a{
+    background-color: red;
+    padding: 20px 10px;
+    color: white;
+}
+
+nav a:nth-child(2){
+    background-color: grey;
+    border: 2px solid black;
+}
+
+ul{
+    list-style: none;
+}
+
+table,tr,th{
+    border-collapse: collapse;
+}
+
+table{
+    border: 1px solid black;
+    float: right;
+    display: inline-block;
+}
+
+tr th{
+    border-bottom: 1px dashed black;
+}
+
+tr th:first-child{
+    border-right: 1px dashed black;
+}
+
+.emphasis{
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    color: grey;
+}
+
+.desc{
+    display: none;
+}

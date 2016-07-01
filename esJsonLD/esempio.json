@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "twitter": "https://twitter.com/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "name": "foaf:name",
+        "anobii": "http://www.anobii.com/books/",
+        "person": "foaf:person",
+        "age": {
+            "@id": "foaf:age",
+            "@type": "xsd:integer"
+        },
+        "made": {
+            "@id": "foaf:made",
+            "@type": "i@d"
+        }
+    },
+    "@id": "twitter:umbertoeco_",
+    "@type": "person",
+    "name": "Umberto Eco",
+    "age": "83",
+    "made": "anobii:il_nome_della_rosa"
+}

@@ -1,0 +1,46 @@
+[
+    {
+        "@context": "context.json",
+        "@id": "ex:me",
+        "@type": "foaf:Person",
+        "foaf:givenName": "John",
+        "foaf:familyName": "Doe",
+        "foaf:knows":[{"@id": "ex:her"},{"@id": "ex:you"},{"@id": "ex:him"}],
+        "foaf:made": {"@id":"ex:doc2"}
+    },
+    {
+        "@context": "context.json",
+        "@id": "ex:you",
+        "@type": "foaf:Person",
+        "foaf:givenName": "Jane",
+        "foaf:familyName": "Doe",
+        "foaf:knows": {"@id":"ex:me"}
+    },
+    {
+        "@context": "context.json",
+        "@id": "ex:him",
+        "@type": "foaf:Person",
+        "foaf:givenName": "John",
+        "foaf:familyName": "Smith",
+        "foaf:knows": [{"@id":"ex:you"},{"@id":"ex:her"}]
+    },
+    {
+        "@context": "context.json",
+        "@id": "ex:her",
+        "@type": "foaf:Person",
+        "foaf:givenName": "Jane",
+        "foaf:familyName": "Smith",
+        "foaf:made": [{"@id":"ex:doc1"},{"@id":"ex:doc2"}]
+    },
+    {
+        "@context": "context.json",
+        "@id": "ex:doc1",
+        "@type": "foaf:Document",
+        "cito:cites": "ex:doc2"
+    },
+    {
+        "@context": "context.json",
+        "@id": "ex:doc2",
+        "@type": "foaf:Document"
+    }
+]

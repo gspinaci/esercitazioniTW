@@ -1,0 +1,25 @@
+<prenotazioni>
+    <biglietto nome="Luca Verdi">
+        <voloAndata data="1-8-2005">
+            <tappa t="Bologna"/>
+            <tappa t="Frankfurt"/>
+            <tappa t="NewYork"/>
+        </voloAndata>
+        <voloRitorno data="8-8-2005">
+            <tappa t="NewYork"/><tappa t="Roma"/><tappa t="Bologna"/>
+        </voloRitorno>
+        <prezzo>990</prezzo>
+    </biglietto>
+    <biglietto nome="Luigi Bianchi">
+        <destinazione>Roma</destinazione>
+        <voloAndata data="6-8-2005">
+            <tappa t="Bologna"/>
+        </voloAndata>
+        <voloRitorno data="7-8-2005">
+            <tappa t="Roma"/>
+            <tappa t="Bologna"/>
+            <tappa t="Napoli"/>
+        </voloRitorno>
+        <prezzo>240</prezzo>
+    </biglietto>
+</prenotazioni>

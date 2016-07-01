@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compito TW</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Dolomiti Superski</h1>
+        <nav>
+            <a href="/impianti">Impianti aperti</a>
+            <a href="/webcam">Webcam</a>
+            <a href="/cartina">Cartina</a>
+            <a href="/percorsi">Percorsi</a>
+            <a href="/prezzi">Prezzi skipass</a>
+        </nav>
+        <div class="content">
+            <p>
+                Il Dolomiti Superski è uno dei più importanti comprensori
+                sciistici italiani e mondiali comprendente gran parte delle piste
+                da sci invernali delle Dolomiti, per un totale di
+                <span class="strong">1.220 km di piste</span> divise in 12 zone
+                sciistiche.
+            </p>
+            <p>Programma il tuo percorso all'interno del comprensorio:</p>
+            <p>
+                <label for="partenza">Partenza: </label>
+                <select name="partenza" id="partenza">
+                    <option value="stazione1">stazione 1</option>
+                    <option value="stazione2">stazione 2</option>
+                    <option value="stazione3">stazione 3</option>
+                    <!-- ecc. -->
+                </select>
+            </p>
+            <p>
+                <label for="arrivo">Arrivo: </label>
+                <select name="arrivo" id="arrivo">
+                    <option value="stazione2">stazione 2</option>
+                    <option value="stazione3">stazione 3</option>
+                    <option value="stazione4">stazione 4</option>
+                    <!-- ecc. -->
+                </select>
+            </p>
+            <p>Livello:</p>
+            <ol>
+                <li>
+                  <input type="radio" name="livello" value="principiante" id="principiante"/>
+                  <label for="principiante">Principiante</label>
+                </li>
+                <li>
+                  <input type="radio" name="livello" value="intermedio" id="intermedio"/>
+                  <label for="intermedio">Intermedio</label>
+                </li>
+                <li>
+                  <input type="radio" name="livello" value="esperto" id="esperto" checked="checked"/>
+                  <label for="esperto">Esperto</label>
+                </li>
+            </ol>
+            <p>
+                <input type="submit" value="Cerca" name="submit" />
+            </p>
+            <div id="tabella">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                Partenza
+                            </td>
+                            <td>
+                                Arrivo
+                            </td>
+                            <td>
+                                Tipo percorso
+                            </td>
+                            <td>
+                                Tempo percorrenza
+                            </td>
+                            <td>
+                                Distanza
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Seggiovia 1 (valle)
+                            </td>
+                            <td>
+                                Seggiovia 1 (monte)
+                            </td>
+                            <td>
+                                Impianto di risalita
+                            </td>
+                            <td>
+                                8 min.
+                            </td>
+                            <td>
+                                1300 mt.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Seggiovia 1 (monte)
+                            </td>
+                            <td>
+                                Seggiovia 13 (valle)
+                            </td>
+                            <td>
+                                Pista baccadella (rossa)
+                            </td>
+                            <td>
+                                10 min.
+                            </td>
+                            <td>
+                                2400 mt.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Seggiovia 13 (valle)
+                            </td>
+                            <td>
+                                Seggiovia 13 (monte)
+                            </td>
+                            <td>
+                                Impianto di risalita
+                            </td>
+                            <td>
+                                6 min.
+                            </td>
+                            <td>
+                                900 mt.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Seggiovia 13 (monte)
+                            </td>
+                            <td>
+                                Seggiovia 32 (valle)
+                            </td>
+                            <td>
+                                Pista Longa (Nera)
+                            </td>
+                            <td>
+                                18 min.
+                            </td>
+                            <td>
+                                5800 mt.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Totale (da Seggiovia 1 a Seggiovia 32)
+                            </td>
+                            <td>
+                                Esperto
+                            </td>
+                            <td>
+                                54 min.
+                            </td>
+                            <td>
+                                8200 mt. (pista), 2200 mt. (risalita)
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <template id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            Partenza
+                        </td>
+                        <td>
+                            Arrivo
+                        </td>
+                        <td>
+                            Tipo percorso
+                        </td>
+                        <td>
+                            Tempo percorrenza
+                        </td>
+                        <td>
+                            Distanza
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+
+            </table>
+        </template>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
