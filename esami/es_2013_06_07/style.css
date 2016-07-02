@@ -1,0 +1,23 @@
+#desc > span{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+header img{
+    float: left;
+}
+
+#desc p{
+    background-color: #eee;
+    padding: 10px 0;
+}
+
+#desc p label{
+    font-weight: bold;
+}
+
+.active{
+
+    background-color: yellow;
+}

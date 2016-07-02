@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esame</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="desc">
+                <span data-val="vissani">
+                    <header>
+                        <img src="#" alt="" />
+                        <h1>Vissani</h1>
+                    </header>
+                    <p>
+                        <label>Nome:</label> Ristorante Vissani
+                    </p>
+                    <p>
+                        <label>Indirizzo:</label> s.s. 448 Todi - Baschi km 6.600 (Terni)
+                    </p>
+                    <p>
+                        <label>Telefono:</label> +39 0744950206
+                    </p>
+                </span>
+                <span data-val="cracco">
+                    <header>
+                        <img src="#" alt="" />
+                        <h1>Cracco</h1>
+                    </header>
+                    <p>
+                        <label>Nome:</label> Ristorante Craccos
+                    </p>
+                    <p>
+                        <label>Indirizzo:</label> Via Victor Hugo 4 20123 Milano
+                    </p>
+                    <p>
+                        <label>Telefono:</label> +39 02876774
+                    </p>
+                </span>
+            </div>
+            <div id="form">
+                <form class="" action="index.html" method="post">
+                    <section>
+                        <h3>Menu del giorno</h3>
+                        <p>
+                            <input type="radio" name="menu" value="mare"> Menu di mare
+                            <input type="radio" name="menu" value="terra"> Menu di terra
+                            <input type="radio" name="menu" value="vegetariano"> Menu vegetariano
+                            <input type="radio" name="menu" value="leggero"> Menu leggero
+                        </p>
+                    </section>
+                    <section id="riquadro">
+
+                    </section>
+                    <section>
+                        <h3>Inserisci i tuoi dati (nome, cognome, contatto telefonico)</h3>
+                        <textarea name="dati" rows="8" cols="40"></textarea>
+                    </section>
+                    <section>
+                        <h3>Numero di persone</h3>
+                        <input type="text" name="numero" value="">
+                    </section>
+                    <section>
+                        <input type="submit" value="spedisci">
+                        <input type="button" value="annulla">
+                    </section>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
