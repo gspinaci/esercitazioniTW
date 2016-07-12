@@ -1,3 +1,57 @@
+$(document).ready(function(){
+    var extra = [];
+
+    var primo = $("input[name=primo]:checked").val();
+    var secondo = $("input[name=secondo]:checked").val();
+    var contorno = $("input[name=contorno]:checked").val();
+
+    $('input[name=altro]:checked').each(function(){
+
+        extra.push($(this).val());
+    });
+
+    $("input[type=submit]").on('click', function(){
+
+        $.ajax({
+            url: 'http://path/to/script/prenotazione.php',
+            type: 'put',
+            data: { primo : primo, secondo : secondo, contorno : contorno, extra : extra},
+            success: function(res) {
+
+            },
+            error: function(err) {
+                console.log(err.status);
+
+            }
+    });
+
+
+
+
+    });
+
+    /*$.ajax({
+        url:'menu.json',
+        success: function(res){
+            res.primo.forEach(result);
+
+            res.secondo.forEach(result);
+
+            res.contorno.forEach(result);
+
+            res.extra.forEach(result);
+
+
+        }
+    });
+
+    var result = function findCheck(elem) {
+
+        if(elem.selected)
+            console.log(elem);
+    };*/
+});
+/*
 $(document).ready(function () {
 
     var prenotato = false;
@@ -64,3 +118,4 @@ $(document).ready(function () {
         });
     });
 });
+*/

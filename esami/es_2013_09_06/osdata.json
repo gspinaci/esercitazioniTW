@@ -1,0 +1,16 @@
+{
+    "osdata": [
+        {
+            "id": "debian",
+            "name": "Debian Linux",
+            "swhouse": "Debian community",
+            "logo": "debian.jpg"
+        },
+        {
+            "id": "redhat",
+            "name": "Debian Red Hat",
+            "swhouse": "Red Hat",
+            "logo": "redhat.jpg"
+        }
+    ]
+}

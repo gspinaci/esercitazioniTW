@@ -1,0 +1,29 @@
+{
+    "nome" : "Francesco Poggi",
+    "matricola" : "0000XXXXYZ",
+    "anno" : "2011/2012",
+    "team" : "QuelliDellaNotte",
+    "punti" : 5,
+    "compiti": [
+        {
+            "data": "2013/06/11",
+            "risultati":[
+                12,
+                2,
+                0,
+                0,
+                1
+            ]
+        },
+        {
+            "data": "2012/09/07",
+            "risultati":[
+                6,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}

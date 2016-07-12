@@ -1,0 +1,63 @@
+{
+    "primo": [
+        {
+            "nome": "tagliatelle",
+            "prezzo": 2.05
+        },
+        {
+            "nome": "cannelloni",
+            "prezzo": 2.05
+        },
+        {
+            "nome": "nidi di rondine",
+            "prezzo": 2.05,
+            "selected": true
+
+        }
+    ],
+    "secondo": [
+        {
+            "nome": "bisteccone",
+            "prezzo": 2.05,
+            "selected": true
+        },
+        {
+            "nome": "salomone",
+            "prezzo": 2.05
+        },
+        {
+            "nome": "verdurone",
+            "prezzo": 2.05
+        }
+    ],
+    "contorno": [
+        {
+            "nome": "fungone",
+            "prezzo": 2.05
+        },
+        {
+            "nome": "zucchinone ;)",
+            "prezzo": 2.05,
+            "selected": true
+
+        },
+        {
+            "nome": "peperone",
+            "prezzo": 2.05
+        }
+    ],
+    "extra": [
+        {
+            "nome": "fruttone",
+            "prezzo": 2.05
+        },
+        {
+            "nome": "pagnotta",
+            "prezzo": 2.05
+        },
+        {
+            "nome": "cheesecake",
+            "prezzo": 2.05
+        }
+    ]
+}

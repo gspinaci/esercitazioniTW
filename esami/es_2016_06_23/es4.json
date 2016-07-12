@@ -1,0 +1,39 @@
+{
+    "@context":{
+        "dbr": "http://dbpedia.org/resource/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "italy": "dbr:italy_national_football_team",
+        "ita_player_base_url": "italy:/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "team": "foaf:Organization",
+        "player": "foaf:Person",
+        "player_of": {
+            "@id": "foaf:member",
+            "@typa": "@id"
+        },
+        "plays_with": {
+            "@id": "foaf:knows",
+            "@type": "@id"
+        },
+        "name": {
+            "@id": "foaf:name",
+            "@type": "xsd:string"
+        },
+        "number":{
+            "@id": "foaf:status",
+            "@type": "xsd:positiveInteger"
+        }
+    },
+    "@id": "ita_player_base_url:Insigne",
+    "@type": "player",
+    "number": 20,
+    "name": "Lorenzo Insigne",
+    "player_of": "italy",
+    "plays_with": {
+        "@id": "ita_player_base_url:Buffon",
+        "@type": "player",
+        "number": 1,
+        "name": "Gianluigi Buffon",
+        "player_of": "italy"
+    }
+}

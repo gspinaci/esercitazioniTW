@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esame</title>
+        <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Green mobility <sup>BETA</sup></h1>
+                <h3>Offri/Trova un passaggio e risparmia</h3>
+            </header>
+            <section id="body">
+                <aside id="nav">
+                    <form method="post" action=http://www.trasportiGreen.it/nuovoViaggio.php>
+                        <div>
+                            <h3>Nuovo viaggio</h3>
+                            <hr>
+                            <p>
+                                <label for="dataPartenza">Data (gg/mm/aaaa)</label>
+                                <input type="text" name="dataPartenza">
+                            </p>
+                            <p>
+                                <label for="ora">Ora Partenza (oo:mm)</label>
+                                <select name="ora">
+                                    <option value="0"></option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="passaggio">Posso dare un passaggio</label>
+                                <input type="radio" name="passaggio" value="true"> Sì
+                                <input type="radio" name="passaggio" value="false"> No
+                            </p>
+                            <hr>
+                        </div>
+                        <div>
+                            <h3>partenza</h3>
+                            <div>
+                                <ul>
+                                    <li><label for="citta">Città</label></li>
+                                    <li><label for="indirizzo">Indirizzo</label></li>
+
+                                </ul>
+                                <ul>
+                                    <li><input type="text" name="citta" value=""></li>
+                                    <li><input type="text" name="indirizzo" value=""></li>
+                                </ul>
+                            </div>
+                            <hr>
+                        </div>
+                        <div>
+                            <h3>Arrivo</h3>
+                            <div>
+                                <ul>
+                                    <li><label for="citta">città</label></li>
+                                    <li><label for="indirizzo">Indirizzo</label></li>
+
+                                </ul>
+                                <ul>
+                                    <li><input type="text" name="citta" value=""></li>
+                                    <li><input type="text" name="indirizzo" value=""></li>
+                                </ul>
+                            </div>
+                            <hr>
+                        </div>
+                        <div>
+                            <h3>Descrizione</h3>
+                            <textarea name="name" rows="8" cols="40" placeholder="Inserisci i dettagli del tuo viaggio."></textarea>
+                            <hr>
+                        </div>
+                        <div>
+                            <input type="submit" value="Organizza viaggio">
+                        </div>
+                    </form>
+
+                </aside>
+                <section>
+                    <header>
+                        <h3>Puoi condividere il viaggio con altri 3 utenti</h3>
+                    </header>
+
+                    <hr>
+                    <article>
+                        <div class="body">
+                            <img src="" alt="Utente 1" width="150" height="150" />
+                            <ul>
+                                <li><b>Data :</b> <span class="data"> 27 febbraio 2013</span></li>
+                                <li><b>Partenza :</b> <span class="partenza"> Casalecchio di reno (8km da te)</span></li>
+                                <li><b>Arrivo :</b> <span class="arrivo"> Milano 2km da te</span></li>
+                                <li><b>Dettagli :</b> <span class="dettagli"> devo fare un colloquio alle 15 in zona fiera</spanspan></li>
+                            </ul>
+                        </div>
+                        <footer>
+                            <a href="mailto:asd@lol.com">contattami</a>
+                        </footer>
+                        <hr>
+                    </article>
+
+                    <article>
+                        <div class="body">
+                            <img src="" alt="Utente 1" width="150" height="150" />
+                            <ul>
+                                <li><b>Data :</b> <span class="data"> 27 febbraio 2013</span></li>
+                                <li><b>Partenza :</b> <span class="partenza"> Casalecchio di reno (8km da te)</span></li>
+                                <li><b>Arrivo :</b> <span class="arrivo"> Milano 2km da te</span></li>
+                                <li><b>Dettagli :</b> <span class="dettagli"> devo fare un colloquio alle 15 in zona fiera</span></li>
+                            </ul>
+                        </div>
+                        <footer>
+                            <a href="mailto:asd@lol.com">contattami</a>
+                        </footer>
+                        <hr>
+                    </article>
+
+                    <article>
+                        <div class="body">
+                            <img src="" alt="Utente 1" width="150" height="150" />
+                            <ul>
+                                <li><b>Data :</b> <span class="data"> 27 febbraio 2013</span></li>
+                                <li><b>Partenza :</b> <span class="partenza"> Casalecchio di reno (8km da te)</span></li>
+                                <li><b>Arrivo :</b> <span class="arrivo"> Milano 2km da te</span></li>
+                                <li><b>Dettagli :</b> <span class="dettagli"> devo fare un colloquio alle 15 in zona fiera</span></li>
+                            </ul>
+                        </div>
+                        <footer>
+                            <a href="mailto:asd@lol.com">contattami</a>
+                        </footer>
+                        <hr>
+                    </article>
+                </section>
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

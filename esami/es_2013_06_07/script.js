@@ -37,27 +37,23 @@ function showRes(res) {
     var tmpl = '<div><span>_nome</span><span>_desc</span></div>';
 
     //antipasto
-    var antipasto = tmpl.replace('_nome',res.antipasto.nome);
-    antipasto = tmpl.replace('_desc',res.antipasto.descrizione);
+    var antipasto = tmpl.replace('_nome',res.antipasto.nome).replace('_desc',res.antipasto.descrizione);
     $('#riquadro').append(antipasto);
 
     //primo
-    var primo = tmpl.replace('_nome',res.primo.nome);
-    primo = tmpl.replace('_desc',res.primo.descrizione);
+    var primo = tmpl.replace('_nome',res.primo.nome).replace('_desc',res.primo.descrizione);
     $('#riquadro').append(primo);
 
     //secondo
-    var secondo = tmpl.replace('_nome',res.secondo.nome);
-    secondo = tmpl.replace('_desc',res.secondo.descrizione);
+    var secondo = tmpl.replace('_nome',res.secondo.nome).replace('_desc',res.secondo.descrizione);
     $('#riquadro').append(secondo);
 
     //dolce
-    var dolce = tmpl.replace('_nome',res.dolce.nome);
-    dolce = tmpl.replace('_desc',res.dolce.descrizione);
+    var dolce = tmpl.replace('_nome',res.dolce.nome).replace('_desc',res.dolce.descrizione);
     $('#riquadro').append(dolce);
 }
 
 function showErr(err){
 
-    
+
 }

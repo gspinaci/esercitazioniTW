@@ -1,0 +1,38 @@
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+legend{
+    font-weight: bold;
+}
+
+section p > label{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    vertical-align: top;
+    font-style: italic;
+}
+
+section p > span, section p > input{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+footer{
+    display: block;
+}
+
+.right{
+    float: right;
+}
+
+.italic{
+    font-style: italic;
+}

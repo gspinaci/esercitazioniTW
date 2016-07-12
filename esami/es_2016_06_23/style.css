@@ -1,0 +1,61 @@
+nav{
+    text-align: center;
+
+}
+
+nav a{
+    display: inline-block;
+    color: white;
+    padding: 10px 5px;
+    background-color: orange
+}
+
+nav a:nth-child(3){
+    background-color: grey;
+    border: 3px solid black
+}
+
+#main{
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+td{
+    font-weight: bold;
+    text-align: center;
+}
+
+th{
+    font-weight: normal;
+}
+
+.place{
+    font-style: italic;
+}
+
+table{
+    border: 2px solid black;
+    float: right;
+}
+
+#pictures{
+    text-align: center;
+}
+
+img{
+    margin: 0 5px;
+    height: 150px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+img:first-child, img:last-child{
+    width: 100px;
+    height: 50px;
+}
+
+ul{
+    list-style: decimal;
+}

@@ -1,0 +1,31 @@
+aside,section{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+aside{
+    width: 20%;
+}
+
+section{
+    width: 75%;
+}
+
+section span{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 0;
+}
+
+section span:first-child{
+    font-weight: bold;
+    width: 15%
+}
+
+section div{
+    padding: 10px 15px
+}
+.grey{
+    background-color: #eee;
+}

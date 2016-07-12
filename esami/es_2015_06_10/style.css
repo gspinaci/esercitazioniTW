@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+}
+
+#registrazione,#descrizione{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+#registrazione{
+    width: 30%;
+    border-right: 2px solid black;
+}
+
+#descrizione{
+    width: 50%
+}
+
+form > div label, form > div input{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+#descrizione a{
+    float: right;
+    text-decoration: none;
+}
+
+.article_desc img,.article_desc > span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.article_desc > span{
+    width: 80%;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 10px 0;
+}
+
+li label,li input{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%
+}
+
+li input[type=number]{
+    width: 40px;
+}
+
+.right{
+    float: right;
+}
+
+.bold{
+    font-weight: bold;
+}

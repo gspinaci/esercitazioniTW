@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esame</title>
+        <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Corso tecnologie web</h1>
+            <section>
+                <fieldset>
+                    <legend>Info studente</legend>
+                    <p>
+                        <label for="nome">Nome e cognome</label>
+                        <input type="text" name="nome" value="Francesco Poggi">
+                    </p>
+                    <p>
+                        <label>Matricola</label>
+                        <span class="matricola">0000XXXXYZ</span>
+                    </p>
+                    <p>
+                        <label>Anno accademico</label>
+                        <span class="anno">2011/2012</span>
+                    </p>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>progetto</legend>
+                    <p>
+                        <label for="team">Nome team</label>
+                        <input type="text" name="team" value="Quelli della notte" disabled>
+                    </p>
+                    <p>
+                        <label for="punti">Punti</label>
+                        <input type="text" name="punti" value="5" disabled>
+                    </p>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>compito 2013/09/17</legend>
+                    <form action="/tw.php" method="post">
+                        <p>
+                            <label for="es1">Esercizio 1:</label>
+                            <input type="text" name="es1" value="12">
+                        </p>
+                        <p>
+                            <label for="es2">Esercizio 2:</label>
+                            <input type="radio" name="es2" value="1"> 1
+                            <input type="radio" name="es2" value="2"> 2
+                            <input type="radio" name="es2" value="3"> 3
+                            <input type="radio" name="es2" value="4"> 4
+                            <input type="radio" name="es2" value="5" checked> 5
+                            <input type="radio" name="es2" value="6"> 6
+                        </p>
+                        <p>
+                            <label for="es3">Esercizio 3:</label>
+                            <input type="radio" name="es3" value="1"> 1
+                            <input type="radio" name="es3" value="2" checked> 2
+                            <input type="radio" name="es3" value="3"> 3
+                            <input type="radio" name="es3" value="4"> 4
+                            <input type="radio" name="es3" value="5"> 5
+                            <input type="radio" name="es3" value="6"> 6
+                        </p>
+                        <p>
+                            <label for="es4">Esercizio 4:</label>
+                            <input type="radio" name="es4" value="1"> 1
+                            <input type="radio" name="es4" value="2"> 2
+                            <input type="radio" name="es4" value="3"> 3
+                            <input type="radio" name="es4" value="4" checked> 4
+                            <input type="radio" name="es4" value="5"> 5
+                            <input type="radio" name="es4" value="6"> 6
+                        </p>
+                        <p>
+                            <label for="es5">Esercizio 5:</label>
+                            <input type="radio" name="es5" value="1" checked> 1
+                            <input type="radio" name="es5" value="2"> 2
+                            <input type="radio" name="es5" value="3"> 3
+                            <input type="radio" name="es5" value="4"> 4
+                        </p>
+                        <hr>
+                        <footer>
+                            <span class="right">
+                                <p class="italic">Totale compito: <span class="totale">24</span></p>
+                                <p>
+                                    <input type="button" name="cancella" value="Cancella">
+                                    <input type="submit" name="invia" value="Ok">
+                                </p>
+                            </span>
+
+                        </footer>
+                    </form>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Compito 2013/06/11</legend>
+                    <p>
+                        <label>Esercizio 1:</label>
+                        <span>12</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 2:</label>
+                        <span>2</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 3:</label>
+                        <span>0</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 4:</label>
+                        <span>0</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 5:</label>
+                        <span>1</span>
+                    </p>
+                    <hr>
+                    <p>
+                        <span class="right italic">Totale compito: <span class="totale">15</span></span>
+                    </p>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Compito 2012/09/07</legend>
+                    <p>
+                        <label>Esercizio 1:</label>
+                        <span>6</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 2:</label>
+                        <span>0</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 3:</label>
+                        <span>0</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 4:</label>
+                        <span>0</span>
+                    </p>
+                    <p>
+                        <label>Esercizio 5:</label>
+                        <span>0</span>
+                    </p>
+                    <hr>
+                    <p>
+                        <span class="right italic">Totale compito: <span class="totale">6</span></span>
+                    </p>
+                </fieldset>
+            </section>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
